@@ -1,0 +1,9 @@
+
+
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+  \begin{center}
+    \includegraphics[width=0.48\textwidth]{gull}
+  \end{center}
+  \caption{A gull}
+\end{wrapfigure}

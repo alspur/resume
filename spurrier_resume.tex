@@ -1,0 +1,162 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{listings}
+\usepackage{vwcol}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{mdwlist}
+\usepackage{natbib}
+\usepackage{hyphenat}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+% There are predefined colors here -- you can change to your color by uncommenting the next line and inserting the correct info. I would just redefine 'Blue' to your Blue.
+\definecolor{Blue}{HTML}{5379aa}
+\usepackage{multirow}
+\renewcommand*\rmdefault{ppl}
+\pagenumbering{gobble}
+\renewcommand*{\familydefault}{\sfdefault}
+\usepackage{titlesec}
+% Setting bullets
+\renewcommand{\labelitemi}{\color{Blue}$\bullet$}
+\renewcommand{\labelitemii}{\color{Blue}$-$}
+\raggedbottom
+
+\begin{document}
+
+% Header. The second command in \fontsize{}{} is line spacing. The first is font size. This is to get bigger than \Huge, which is the largest standard size.
+\noindent\fontsize{35}{40}\selectfont Alex Spurrier\\\\
+\normalsize
+
+\begin{vwcol}[widths={0.2,0.8},sep=1.5cm,justify=flush,rule=0pt,indent=0em]
+\textcolor{Gray}{
+\large\textbf{Contact} \\
+\normalsize140 Greenway Ln \\
+Lexington, KY 40511 \\\\
+(763) 242-4287 \\
+\href{mailto:alex.spurrier@gmail.com}{alex.spurrier@gmail.com} \\\\
+\href{http://www.alspur.com/}{alspur.com} \\
+\href{http://www.github.com/alspur}{github.com/alspur}\\\\\\
+\nohyphens{\noindent\large\textbf{Computer Skills} \\
+\normalsize\textit{Basic:} Stata, SAS, Unix, \LaTeX \\\\
+\textit{Intermediate:} SQL, HTML, CSS, git, Python \\\\
+\textit{Advanced:} R, Microsoft Office
+}}
+\newpage
+
+
+% Education section.
+{\Large\bfseries\color{Blue}Education} \\\\
+\noindent\begin{tabular*}{0.7\textwidth}{l @{\extracolsep{\fill}} r}
+  \textbf{M.A., Public Policy,} \textit{Trinity College} & \ {\color{Gray}Hartford, CT} \\ 
+  Honors in Graduate Scholarship & \ {\color{Gray}2011} \\\\
+  \textbf{B.A., Economics,} \textit{Bethel University} & \ {\color{Gray}St.Paul, MN} \\
+  Cum Laude & \ {\color{Gray}2007} \\
+\end{tabular*} \\\\\\
+
+
+% Experience section
+{\Large\bfseries\color{Blue}Experience} \\\\
+\noindent\begin{tabular*}{0.7\textwidth}{l @{\extracolsep{\fill}} r}
+  \textbf{Kentucky Department of Education} & \ {\color{Gray}Frankfort, KY} \\
+  {\color{Gray}Strategic Data Analyst} & \ {\color{Gray}2015--Present}\\
+  {\color{Gray}Harvard Strategic Data Project Fellow} & \ {\color{Gray}2015--2017}\\\\
+  
+  \multicolumn{2}{p{0.7\textwidth}}{Selected to participate in the Harvard Strategic Data Project Fellowship, a competitive two-year program that places and develops talented data strategists in education agencies. Participated in extensive training in measurement and analysis, leadership, change management, and education policy. Serve as the lead researcher on the Strategic Planning \& Research Team, planning and leading the development of research products that inform agency leadership and the Kentucky State Board of Education. 
+  
+  \vspace{5mm}
+  Achievements:
+  \begin{itemize*}
+    \item Lead a team of analysts to design and execute a research agenda to inform agency leadership by transforming the agency's raw data into actionable analyses, reports, and presentations. 
+    \item Support the development and implementation of the agency's 2017-2022 strategic plan by developing meaningful goals, strategies, and metrics.
+    \item Improved analyst efficiency by developing an \href{http://www.github.com/alspur/kysrc}{R package of Kentucky School Report Card data} to streamline data analysis.
+    \item Created and deployed an analyst on-boarding curriculum to build strong analysis and collaboration skills through the use of R and GitHub. 
+    \item Produced \href{http://alspur.com/capstone-project/}{an online book on developing a culture of collaborative analysis development in an education agency} as part of a capstone project for the Strategic Data Project Fellowship.
+  \end{itemize*}}
+  
+
+\end{tabular*}
+
+\end{vwcol}
+
+\begin{minipage}{.9\textwidth}
+
+\noindent\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+  \textbf{TNTP - The New Teacher Project} & \ {\color{Gray}New York, NY} \\
+  {\color{Gray}Analyst} & \ {\color{Gray}2014--2015} \\\\
+  \multicolumn{2}{p{\textwidth}}{Supported TNTP's work with education organizations to implement performance-based teacher compensation systems.
+
+  \vspace{2mm}
+  Achievements:
+  \begin{itemize*}
+  
+    \item Developed complex financial models to project the impact of implementing performance-based teacher compensation systems for states, large urban school districts, and charter management organizations. 
+    \item Worked with key policymakers to communicate model results and refine policy options to support teacher compensation reform. 
+
+  \end{itemize*}}
+\end{tabular*}
+
+\noindent\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+  \textbf{ConnCAN - The Connecticut Coalition for Achievement Now}& \ {\color{Gray}New Haven, CT} \\
+  {\color{Gray}Manager, Research \& Policy} & \ {\color{Gray}2012--2014} \\
+  {\color{Gray}Senior Associate, Research \& Policy} & \ {\color{Gray}2011--2012} \\
+  {\color{Gray}Associate, Research \& Policy} & \ {\color{Gray}2010--2011} \\\\
+  \multicolumn{2}{p{\textwidth}}{Developed original research to support results-oriented advocacy campaigns aimed at building a sustained movement for education reform in the state of Connecticut. Managed joint efforts with ConnCAN's internal teams and external strategic partners to provide research support in a fast-paced environment, including analyses of student assessment data, collective bargaining agreements, and legislative budget documents. 
+
+  \vspace{2mm}
+  Achievements:
+  \begin{itemize*}
+    \item Created policy briefs, data visualizations, and research projects in a collaborative environment, including some partnerships with national policy experts. 
+    \item Developed financial models of statewide school funding formulas to inform the creation of legislation to overhaul school finance in Connecticut, Senate Bill 1195 (2011). 
+    \item Led a complete overhaul of ConnCAN's School Report Cards website to improve the design and functionality to better serve parents and policymakers.
+    \item Prepared and delivered testimony on education policy to the Connecticut General Assembly's Education and Appropriations Committees.
+  \end{itemize*}}
+\end{tabular*}
+
+
+\noindent\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+  \textbf{Achieve Hartford}& \ {\color{Gray}Hartford, CT} \\
+  {\color{Gray}Research Intern} & \ {\color{Gray}2009--2010} \\\\
+  \multicolumn{2}{p{\textwidth}}{Designed and executed an evaluation of Hartford's implementation of School Governance Councils.}\\\\
+\end{tabular*}
+
+\noindent\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r}
+  \textbf{Hartford Public Schools / Teach for America}& \ {\color{Gray}Hartford, CT} \\
+  {\color{Gray}Fifth Grade Teacher / Corps Member} & \ {\color{Gray}2007--2008} \\\\
+  \multicolumn{2}{p{\textwidth}}{Served as member of a highly selective national service corps of recent college graduates who teach in under-resourced public schools.
+
+  \vspace{2mm}
+  Achievements:
+  \begin{itemize*}
+    \item Achieved a 61\% improvement in student math performance by delivering instruction based on objective-oriented lesson plans aligned to ambitious student achievement goals.
+  \end{itemize*}}
+\end{tabular*}
+
+
+\end{minipage}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
